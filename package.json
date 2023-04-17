@@ -20,7 +20,7 @@
 		"lint": "eslint src --ext .ts && prettier --check --plugin-search-dir=. .",
 		"build": "tsc",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"postinstall": "is-ci || husky install",
+		"prepare": "is-ci || husky install",
 		"update": "yarn upgrade-interactive"
 	},
 	"devDependencies": {
