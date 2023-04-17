@@ -7,7 +7,9 @@
 	"files": [
 		"dist"
 	],
-	"bin": "./dist/index.js",
+	"bin": {
+		"chatsift-logs": "./dist/index.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/chatsift/logs.git"
