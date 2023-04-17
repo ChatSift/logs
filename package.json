@@ -1,0 +1,46 @@
+{
+	"name": "@chatsift/logs",
+	"description": "🪵 Transport for the logging stack for ChatSift, built for pino and Parseable",
+	"packageManager": "yarn@3.5.0",
+	"version": "0.1.0",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"bin": "./dist/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chatsift/logs.git"
+	},
+	"bugs": {
+		"url": "https://github.com/chatsift/logs/issues"
+	},
+	"homepage": "https://github.com/chatsift/logs",
+	"scripts": {
+		"lint": "eslint src --ext .ts && prettier --check --plugin-search-dir=. .",
+		"build": "tsc",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"postinstall": "is-ci || husky install",
+		"update": "yarn upgrade-interactive"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.1",
+		"@commitlint/config-angular": "^17.6.1",
+		"@types/node": "^16.18.23",
+		"eslint": "^8.38.0",
+		"eslint-config-neon": "^0.1.42",
+		"eslint-formatter-pretty": "^5.0.0",
+		"husky": "^8.0.3",
+		"is-ci": "^3.0.1",
+		"prettier": "^2.8.7",
+		"rimraf": "^4.4.1",
+		"typescript": "^4.9.5"
+	},
+	"dependencies": {
+		"@discordjs/core": "^0.5.0",
+		"@discordjs/rest": "^1.7.0",
+		"pino": "^8.11.0",
+		"tslib": "^2.5.0",
+		"undici": "^5.21.2"
+	}
+}

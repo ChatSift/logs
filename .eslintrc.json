@@ -1,0 +1,11 @@
+{
+	"root": true,
+	"extends": ["neon/common", "neon/node", "neon/typescript", "neon/prettier", "neon/module"],
+	"parserOptions": {
+		"project": "./tsconfig.eslint.json"
+	},
+	"rules": {
+		"curly": ["error", "all"],
+		"@typescript-eslint/consistent-type-definitions": ["error", "interface"]
+	}
+}
