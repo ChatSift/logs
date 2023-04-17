@@ -241,7 +241,7 @@ __metadata:
     typescript: ^4.9.5
     undici: ^5.21.2
   bin:
-    logs: ./dist/index.js
+    chatsift-logs: ./dist/index.js
   languageName: unknown
   linkType: soft
 
