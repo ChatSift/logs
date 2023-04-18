@@ -2,7 +2,7 @@
 	"name": "@chatsift/logs",
 	"description": "🪵 Transport for the logging stack for ChatSift, built for pino and Parseable",
 	"packageManager": "yarn@3.5.0",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"files": [
 		"dist"
