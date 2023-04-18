@@ -261,10 +261,10 @@ async function flush(): Promise<void> {
 					stack: _error.stack!,
 				},
 			});
-		} finally {
-			batch.splice(0, batch.length);
 		}
 	}
+
+	batch.splice(0, batch.length);
 }
 
 setInterval(flush, 5_000).unref();
